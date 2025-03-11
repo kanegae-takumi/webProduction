@@ -18,7 +18,7 @@ pageEncoding="UTF-8"%>
             <div class="player-card">
 				<div class="player-info">
 					<p> ヤマダ タロウ</p>
-					     <a href="player1.html"> <!-- 個別選手ページへのリンク -->
+					     <a href="playerDetail.jsp"> <!-- 個別選手ページへのリンク -->
 					        <img src="player1.jpg" alt="player1のサムネイル">
 						</a>
                     <p>キャッチャー</p>
@@ -27,7 +27,7 @@ pageEncoding="UTF-8"%>
             <div class="player-card">
 				<div class="player-info">
 					<p>サトウ ハナコ</p>
-						<a href="player2.html"> <!-- 個別選手ページへのリンク -->
+						<a href="playerDetail.jsp"> <!-- 個別選手ページへのリンク -->
 					        <img src="player2.jpg" alt="player2のサムネイル">
 						</a>
 					<p>ファースト</p>
@@ -36,7 +36,7 @@ pageEncoding="UTF-8"%>
 			<div class="player-card">
 				<div class="player-info">
 					<p>タナカ ジロウ</p>
-						<a href="player3.html"> <!-- 個別選手ページへのリンク -->
+						<a href="playerDetail.jsp"> <!-- 個別選手ページへのリンク -->
 								    	<img src="player3.jpg" alt="player3のサムネイル">
 						</a>
 					<p>セカンド</p>
@@ -45,7 +45,7 @@ pageEncoding="UTF-8"%>
 			<div class="player-card">
 				<div class="player-info">
 					<p>ワタナベ サブロウ</p>
-						<a href="player4.html"> <!-- 個別選手ページへのリンク -->
+						<a href="playerDetail.jsp"> <!-- 個別選手ページへのリンク -->
 							<img src="player4.jpg" alt="player4のサムネイル">
 						</a>
 					<p>サード</p>
@@ -54,7 +54,7 @@ pageEncoding="UTF-8"%>
 			<div class="player-card">
 				<div class="player-info">
 					<p>マイケル アベ</p>
-						<a href="player5.html"> <!-- 個別選手ページへのリンク -->
+						<a href="playerDetail.jsp"> <!-- 個別選手ページへのリンク -->
 							<img src="player3.jpg" alt="player5のサムネイル">
 						</a>
 			        <p>ショート</p>
@@ -63,7 +63,7 @@ pageEncoding="UTF-8"%>
 			<div class="player-card">
 				<div class="player-info">
 					<p>トニー ラマ</p>
-						<a href="player6.html"> <!-- 個別選手ページへのリンク -->
+						<a href="playerDetail.jsp"> <!-- 個別選手ページへのリンク -->
 							<img src="player1.jpg" alt="player6のサムネイル">
 						</a>
 			        <p>ライト</p>
@@ -72,7 +72,7 @@ pageEncoding="UTF-8"%>
 			<div class="player-card">				
 				<div class="player-info">
 					<p> フリーザ</p>
-						<a href="player7.html"> <!-- 個別選手ページへのリンク -->
+						<a href="playerDetail.jsp"> <!-- 個別選手ページへのリンク -->
 							<img src="player4.jpg" alt="player7のサムネイル">
 						</a>
 					<p>センター</p>
@@ -81,7 +81,7 @@ pageEncoding="UTF-8"%>
 			<div class="player-card">
 				<div class="player-info">
 					<p>ピッコロ</p>
-						<a href="player8.html"> <!-- 個別選手ページへのリンク -->
+						<a href="playerDetail.jsp"> <!-- 個別選手ページへのリンク -->
 							<img src="player3.jpg" alt="player8のサムネイル">
 						</a>
 			        <p>レフト</p>
@@ -90,7 +90,7 @@ pageEncoding="UTF-8"%>
 			<div class="player-card">
 				<div class="player-info">
 					<p> ヤムチャ</p>
-						<a href="player9.html"> <!-- 個別選手ページへのリンク -->
+						<a href="playerDetail.jsp"> <!-- 個別選手ページへのリンク -->
 							<img src="player3.jpg" alt="player9のサムネイル">
 						</a>
 			        <p>ピッチャー</p>
@@ -99,7 +99,7 @@ pageEncoding="UTF-8"%>
 			<div class="player-card">
 				<div class="player-info">
 					<p>テンシンハン</p>
-						<a href="player10.html"> <!-- 個別選手ページへのリンク -->
+						<a href="playerDetail.jsp"> <!-- 個別選手ページへのリンク -->
 							<img src="player4.jpg" alt="player10のサムネイル">
 						</a>
 			        <p>レフト</p>
@@ -108,7 +108,7 @@ pageEncoding="UTF-8"%>
 			<div class="player-card">
 				<div class="player-info">
 					<p>カカロット</p>
-						<a href="player11.html"> <!-- 個別選手ページへのリンク -->
+						<a href="playerDetail.jsp"> <!-- 個別選手ページへのリンク -->
 							<img src="player2.jpg" alt="player11のサムネイル">
 						</a>
 			        <p>センター</p>
@@ -117,7 +117,7 @@ pageEncoding="UTF-8"%>
 			<div class="player-card">
 				<div class="player-info">
 					<p>チャオズ</p>
-						<a href="player12.html"> <!-- 個別選手ページへのリンク -->
+						<a href="playerDetail.jsp"> <!-- 個別選手ページへのリンク -->
 							<img src="player3.jpg" alt="player12のサムネイル">
 						</a>
 			        <p>ファースト</p>
