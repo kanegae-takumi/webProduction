@@ -34,7 +34,7 @@ pageEncoding="UTF-8"%>
     </div>
     <!-- 戻るボタン -->
     <div class="back-button">
-        <a href="players.jsp">戻る</a>
+        <a href="player.jsp">戻る</a>
     </div>
 </body>
 </html>

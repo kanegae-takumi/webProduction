@@ -129,7 +129,7 @@ pageEncoding="UTF-8"%>
     </div>
 	<!-- TOPページボタン -->
 	<div class="top-page-button">
-	    <a href="index.html">TOPページ</a>
+	    <a href="memberTop.jsp">TOPページ</a>
 	</div>
 
 </body>
