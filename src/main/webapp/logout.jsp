@@ -6,7 +6,7 @@ pageEncoding="UTF-8"%>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ログアウト</title>
-    <link rel="stylesheet" href="useraddresult.css">
+    <link rel="stylesheet" href="logout.css">
 </head>
 <body>
     <div class="completion-container">
