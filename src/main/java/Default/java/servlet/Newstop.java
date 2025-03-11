@@ -25,7 +25,7 @@ public class Newstop extends HttpServlet {
 //	}
 	
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        RequestDispatcher dispatcher = request.getRequestDispatcher("newstop.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("news.jsp");
         dispatcher.forward(request, response);
     }
 

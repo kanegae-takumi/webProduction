@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+ <h2>問い合わせ確認</h2>
 </body>
 </html>
