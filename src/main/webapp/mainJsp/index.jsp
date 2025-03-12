@@ -19,7 +19,7 @@ pageEncoding="UTF-8"%>
         <li>1</li>
       </ul>
       <div class="main-picture">
-        <img src="PhoenixChicket (1).png" alt="TOP画面ロゴ" class="main-logo" />
+        <img src="PhoenixChicketLogoBig.png" alt="TOP画面ロゴ" class="main-logo" />
       </div>
       <p class="sales-message">最安でチケットが買えるウェブサイト</p>
     </main>

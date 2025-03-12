@@ -10,7 +10,7 @@ pageEncoding="UTF-8"%>
               <li>
                 <input
                   type="image"
-                  src="PhoenixChicket.png"
+                  src="PhoenixChicketLogo.png"
                   alt="ロゴ兼Home"
                   class="logo"
                 />
