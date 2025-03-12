@@ -6,33 +6,26 @@ pageEncoding="UTF-8"%>
         <nav>
           <ul>
             <!-- ロゴ -->
-            <form action="★" method="post">
-              <li>
-                <input
-                  type="image"
-                  src="PhoenixChicketLogo.png"
-                  alt="ロゴ兼Home"
-                  class="logo"
-                />
-              </li>
-            </form>
+            <li>
+              <input
+                type="image"
+                src="PhoenixChicketLogo.png"
+                alt="ロゴ兼Home"
+                class="logo"
+              />
+            </li>
+            <!-- ヘッダー右側 -->
             <div class="nav">
               <!-- ログイン -->
-              <form action="★" method="post" class="login">
-                <li>
-                  <button type="submit" name="submit" value="login">
-                    ログイン
-                  </button>
-                </li>
-              </form>
+              <li>
+                <button onclick="location.href='login.jsp'">ログイン</button>
+              </li>
               <!-- 新規登録 -->
-              <form action="★" method="post">
-                <li>
-                  <button type="submit" name="submit" value="newRegistration">
-                    新規登録
-                  </button>
-                </li>
-              </form>
+              <li>
+                <button onclick="location.href='newMemberRegistration.jsp'">
+                  新規登録
+                </button>
+              </li>
             </div>
           </ul>
         </nav>
