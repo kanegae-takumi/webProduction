@@ -17,22 +17,27 @@ public class TicketList extends HttpServlet {
  
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		 // ticket.jsp を表示  
-        request.getRequestDispatcher("/ticket.jsp").forward(request, response);  
+        request.getRequestDispatcher("/mainJsp/ticket.jsp").forward(request, response);  
    	}
 
 	
 	    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	        String ticket = request.getParameter("ticket");
+	    	request.setCharacterEncoding("UTF-8");
+	    	
+	    	String ticket = request.getParameter("ticket");
+	    	
 	        if ("resaleTicketSalesConfirmation".equals(ticket)) {
-	            response.sendRedirect("resaleTicketSalesConfirmation.jsp");
+	            request.getRequestDispatcher("./mainJsp/resaleTicketSalesConfirmation.jsp").forward(request, response);
 	        } else if ("ticketDisplay".equals(ticket)) {
-	            response.sendRedirect("ticketDisplay.jsp");
+	            request.getRequestDispatcher("./mainJsp/ticketDisplay.jsp").forward(request, response);
 	        } else if ("ticket".equals(ticket)) {
-	            response.sendRedirect("ticket.jsp");
+	            request.getRequestDispatcher("./mainJsp/ticket.jsp").forward(request, response);
 	        } else if ("resaleTicketSalesComplete".equals(ticket)) {
-	            response.sendRedirect("resaleTicketSalesComplete.jsp");
+	            request.getRequestDispatcher("./mainJsp/resaleTicketSalesComplete.jsp").forward(request, response);
+	        } else if ("memberTop".equals(ticket)){
+	            request.getRequestDispatcher("./mainJsp/memberTop.jsp").forward(request, response);
 	        } else {
-	            response.sendRedirect("memberTop.jsp");  // デフォルトでページAにリダイレクト
+	            response.sendError(HttpServletResponse.SC_BAD_REQUEST, "Invalid action");
 	        }
 	    }
 	}

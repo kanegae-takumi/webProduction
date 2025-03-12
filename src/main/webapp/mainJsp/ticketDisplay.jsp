@@ -21,8 +21,8 @@
 		座席<br/>
 	</h5>
 	</div>	
-	<form ticket="${pageContext.request.contextPath}/TicketList" method="post" onsubmit="saveData()">
-	<button type="submit" name="ticket" value="ticket">戻る</button>
+	<form ticket="${pageContext.request.contextPath}/TicketList.java" method="post" onsubmit="saveData()">
+	<button type="button2" name="ticket" value="ticket">戻る</button>
 	</form>
  </body>
  </html>
