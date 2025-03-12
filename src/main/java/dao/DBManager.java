@@ -22,7 +22,7 @@ import java.sql.SQLException;
 public class DBManager {
 
 	private static final String NAME_DRIVER_MYSQL = "com.mysql.cj.jdbc.Driver";
-	private static final String URL = "jdbc:mysql://localhost:3306/webdb?characterEncoding=UTF-8&serverTimeZone=JST";
+	private static final String URL = "jdbc:mysql://localhost:3306/phoenix?characterEncoding=UTF-8&serverTimeZone=JST";
 	private static final String USER = "Recurrent6C";
 	private static final String PASSWORD = "6cjava";
 	/**
