@@ -14,15 +14,15 @@ public class GameBean implements Serializable {
 	private int stadiumId;
 	private Date gameDeleteAt;
 	
-	public GameBean(int gameId, Date gameDate, Time startTime, int homeTeamId, int awayTeamId, int stadiumId,
-			Date gameDeleteAt) {
+	public GameBean(int gameId, Date gameDate, int homeTeamId, int awayTeamId, int stadiumId) {
 		this.gameId = gameId;
 		this.gameDate = gameDate;
-		this.startTime = startTime;
 		this.homeTeamId = homeTeamId;
 		this.awayTeamId = awayTeamId;
 		this.stadiumId = stadiumId;
-		this.gameDeleteAt = gameDeleteAt;
+	}
+
+	public GameBean(int gId, java.sql.Date gDay, Time gTime, String gHomeTeam, String gAwayTeam, String gStadium) {
 	}
 
 	public int getGameId() {
