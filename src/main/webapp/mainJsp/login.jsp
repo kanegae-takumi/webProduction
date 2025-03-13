@@ -17,7 +17,7 @@
  	<form login="${pageContext.request.contextPath}/LoginServlet.java" method="post" onsubmit="saveData()">
  	
  	<p>
- 		<label>会員ID</label><input type="text" name="user=id">
+ 		<label>メールアドレス</label><input type="email" name="email">
  	</p>
  	<p>
  		<label>パスワード</label><input type="password" name="password">
