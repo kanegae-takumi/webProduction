@@ -23,4 +23,10 @@ pageEncoding="UTF-8"%>
   </body>
 </html>
 
-このようにヘッダーとフッターを追加してください。
+●ルール3/13更新
+	①上記ようにヘッダーとフッターを追加してください。
+
+    <link rel="stylesheet" href="../css/html5reset-1.6.1.css" media="all" />
+    <link rel="stylesheet" href="../css/style.css" />
+    
+    ②上記CSSのリンクを追加してください。
