@@ -60,7 +60,7 @@ h3 {
 u {
   color: white;
 }
-/* ボタン1 */
+/* ボタン1 背景無し白枠文字白*/
 .button1 {
   padding: 5px 10px;
   background: none;
@@ -70,10 +70,46 @@ u {
   font-size: 16px;
   cursor: pointer;
 }
-/* ボタン1ホバー時の記述 */
+/* ボタン1ホバー時の記述 背景白 文字色オレンジに*/
 .button1:hover {
   background-color: #fff;
   color: #ec6d4e;
+}
+/* ボタン2 背景オレンジ 文字白*/
+.button2 {
+  padding: 5px 10px;
+  background-color: #ec6d4e;
+  border: 2px solid #ec6d4e;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* ボタン2 ホバー時の記述 枠線を白に変え影を付ける*/
+.button2:hover {
+  background-color: #ec6d4e;
+  color: white;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+/* ボタン3 背景白　枠線オレンジ 文字オレンジ*/
+.button3 {
+  padding: 5px 10px;
+  background-color: white;
+  border: 2px solid #ec6d4e;
+  border-radius: 20px;
+  color: #ec6d4e;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* ボタン3 ホバー時の記述 枠線を白 背景色をオレンジ文字を白に変え影を付ける*/
+.button3:hover {
+  background-color: #ec6d4e;
+  color: white;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
 }
 /* inputタグ用CSS */
 input {
