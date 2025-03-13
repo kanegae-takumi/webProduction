@@ -8,6 +8,7 @@ pageEncoding="UTF-8"%>
     <title>非会員TOPページ</title>
     <link rel="stylesheet" href="../css/html5reset-1.6.1.css" media="all" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/non-memberTop.css" />
   </head>
   <body>
      <!-- ヘッダーを挿入 -->

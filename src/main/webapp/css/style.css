@@ -4,6 +4,7 @@
 }
 body {
   background-color: #ec6d4e;
+  color: white;
 }
 /* ヘッダー */
 header {
@@ -42,28 +43,46 @@ header {
   padding: 20px;
   margin-left: 0;
 }
-/* メイン */
-main {
-  height: 500px;
-}
-.col3 {
-  display: flex;
-}
-.col3 li {
-  width: calc(100% / 3);
-  height: 400px;
-}
-
-.main-picture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.sales-message {
-  padding: 10px 0 10px 0;
-  text-align: center;
+/* メインコンテンツ */
+/* h1 タイトル */
+h1 {
   color: white;
-  font-family: Noto Sans Japaneze;
+}
+/* h2 サブ */
+h2 {
+  color: white;
+}
+/* h3 項目 */
+h3 {
+  color: white;
+}
+/* u アンダーバー */
+u {
+  color: white;
+}
+/* ボタン1 */
+.button1 {
+  padding: 5px 10px;
+  background: none;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* ボタン1ホバー時の記述 */
+.button1:hover {
+  background-color: #fff;
+  color: #ec6d4e;
+}
+/* inputタグ用CSS */
+input {
+  background-color: white;
+  color: #ec6d4e;
+  font-weight: bold;
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 8px;
 }
 /* フッター */
 .footer {
