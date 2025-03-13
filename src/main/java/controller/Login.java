@@ -43,9 +43,6 @@ public class Login {
 
         } catch (SQLException e) {
             e.printStackTrace();
-            System.out.println("Error Message: " + e.getMessage());
-            System.out.println("SQL State: " + e.getSQLState());
-            System.out.println("Error Code: " + e.getErrorCode());
             return false;
 		}
 	}

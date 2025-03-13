@@ -14,14 +14,14 @@
   <jsp:include page="/inc/header.jsp" />
  	<h1>ログイン</h1>
  	<div class = enclose1>
- 	<form login="${pageContext.request.contextPath}/LoginServlet.java" method="post" onsubmit="saveData()">
- 	
- 	<p>
- 		<label>メールアドレス</label><input type="email" name="email">
+<!-- 	<form action="${pageContext.request.contextPath}/login" method="post" onsubmit="return validateForm();">-->
+<form action="login" method="post" onsubmit="return validateForm();"> 	<p>
+ 		<label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email" required>
  	</p>
  	<p>
- 		<label>パスワード</label><input type="password" name="password">
- 	</p>
+ 		<label for="password">パスワード</label>
+        <input type="password" id="password" name="password" required></p>
  	<button type="button1" name="login" value="login">ログイン</button>
  	</form>
 	</div> 
