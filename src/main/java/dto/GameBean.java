@@ -14,6 +14,10 @@ public class GameBean implements Serializable {
 	private int stadiumId;
 	private Date gameDeleteAt;
 	
+	private String homeTeamName;
+	private String awayTeamName;
+	private String stadium;
+	
 	public GameBean(int gameId, Date gameDate, int homeTeamId, int awayTeamId, int stadiumId) {
 		this.gameId = gameId;
 		this.gameDate = gameDate;
@@ -22,7 +26,14 @@ public class GameBean implements Serializable {
 		this.stadiumId = stadiumId;
 	}
 
-	public GameBean(int gId, java.sql.Date gDay, Time gTime, String gHomeTeam, String gAwayTeam, String gStadium) {
+	public GameBean(int gId, Date gDay, Time gTime, String gHomeTeam, String gAwayTeam, String gStadium) {
+		this.gameId = gId;
+		this.gameDate = gDay;
+		this.startTime = gTime;
+		this.setHomeTeamName(gHomeTeam);
+		this.setAwayTeamName(gAwayTeam);
+		this.setStadium(gStadium);
+		
 	}
 
 	public int getGameId() {
@@ -79,6 +90,30 @@ public class GameBean implements Serializable {
 
 	public void setGameDeleteAt(Date gameDeleteAt) {
 		this.gameDeleteAt = gameDeleteAt;
+	}
+
+	public String getHomeTeamName() {
+		return homeTeamName;
+	}
+
+	public void setHomeTeamName(String homeTeamName) {
+		this.homeTeamName = homeTeamName;
+	}
+
+	public String getAwayTeamName() {
+		return awayTeamName;
+	}
+
+	public void setAwayTeamName(String awayTeamName) {
+		this.awayTeamName = awayTeamName;
+	}
+
+	public String getStadium() {
+		return stadium;
+	}
+
+	public void setStadium(String stadium) {
+		this.stadium = stadium;
 	}
 	
 	

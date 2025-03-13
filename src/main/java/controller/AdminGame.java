@@ -10,8 +10,6 @@ import java.sql.Time;
 import java.util.ArrayList;
 import java.util.List;
 
-import javax.sql.DataSource;
-
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -19,6 +17,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
+import dao.DBManager;
 import dto.GameBean;
 
 /**
@@ -27,7 +26,6 @@ import dto.GameBean;
 @WebServlet("/game")
 public class AdminGame extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private DataSource ds;
 
 	@Override
 	public void init() throws ServletException {
@@ -100,7 +98,7 @@ public class AdminGame extends HttpServlet {
 			// 検索ボタン押下
 			case "search":
 
-				try (Connection connection = ds.getConnection();) {
+				try (Connection connection = DBManager.getConnection();) {
 
 					//チーム名でチームIDを検索
 					if (!homeTeam.isEmpty()) {
@@ -127,8 +125,12 @@ public class AdminGame extends HttpServlet {
 					}
 
 					// SQLクエリの基本部分
-					StringBuilder searchSql = new StringBuilder("SELECT * FROM games WHERE 1=1");
-
+					StringBuilder searchSql = new StringBuilder("SELECT * FROM games ");
+					
+					searchSql.append("join teams as homeTeam on games.home_team_id = homeTeam.team_id ");
+					searchSql.append("join teams as awayTeam on games.away_team_id = awayTeam.team_id ");
+					searchSql.append("join stadiums on games.stadium_id = stadiums.stadium_id WHERE 1=1");
+					
 					// パラメータに基づいてWHERE句を動的に追加
 					if (gameId != null && !gameId.isEmpty()) {
 						searchSql.append(" AND game_id = ?");
@@ -145,10 +147,6 @@ public class AdminGame extends HttpServlet {
 					if (stadium != null && !stadium.isEmpty()) {
 						searchSql.append(" AND stadium = ?");
 					}
-
-					
-					searchSql.append("join teams as awayTeam on games.away_team_id = teams.team_id");
-					searchSql.append("join stadiums on games.stadium_id = stadiums.stadium_id WHERE 1=1");
 
 					// SQL実行
 					try (PreparedStatement statement = connection.prepareStatement(searchSql.toString())) {
@@ -220,11 +218,12 @@ public class AdminGame extends HttpServlet {
 						"insert into games (game_date, start_time, home_team_id, away_team_id, stadium_id) value (?, ?, ?, ?, ?)");
 
 				//各Idを検索するsqlを文字列に変換
-				try (Connection connection = ds.getConnection();
+				try (Connection connection = DBManager.getConnection();
 						PreparedStatement statement = connection.prepareStatement(addSql.toString());
 						PreparedStatement homeTeamIdSql = connection.prepareStatement(homeTeamSql.toString());
 						PreparedStatement awayTeamIdSql = connection.prepareStatement(awayTeamSql.toString());
 						PreparedStatement stadiumIdSql = connection.prepareStatement(stadiumSql.toString());) {
+					
 					//日付と時間をdate型とtime型に変換
 					Date gameDate = Date.valueOf(hiddenDay);
 					Time gameTimes = Time.valueOf(hiddenTime);
