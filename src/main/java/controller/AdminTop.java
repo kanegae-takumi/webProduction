@@ -11,10 +11,15 @@ import jakarta.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class AdminTop
  */
-@WebServlet("/AdminTop")
+@WebServlet("/adminTop")
 public class AdminTop extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
+	@Override
+	public void init() throws ServletException {
+		// DataSourceの初期化 (例: JNDI lookupなど)
+		// ds = (DataSource) getServletContext().getAttribute("datasource");
+	}
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */

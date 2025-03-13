@@ -46,7 +46,7 @@ public class AdminGame extends HttpServlet {
 		// 遷移先分岐
 		String gamePage = request.getParameter("gamePage");
 		if (gamePage == null || gamePage.isEmpty() || gamePage.equals("reset")) {
-			String path = "/admin/game.jsp";
+			String path = "./admin/game.jsp";
 			request.getRequestDispatcher(path).forward(request, response);
 		} else {
 
