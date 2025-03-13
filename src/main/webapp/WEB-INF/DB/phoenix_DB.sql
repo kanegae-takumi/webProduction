@@ -565,9 +565,10 @@ CREATE TABLE `users` (
   `last_login_at` datetime NOT NULL COMMENT 'カードの有効期限',
   `credit_card_number` varchar(45) DEFAULT NULL COMMENT 'クレジットカード番号',
   `credit_card_expiry_date` varchar(5) DEFAULT NULL,
+  `credit_card_security_code` varchar(3) DEFAULT NULL COMMENT 'カードのセキュリティコード',
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `email_UNIQUE` (`email`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3 COMMENT='会員テーブル';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3 COMMENT='会員テーブル';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -576,6 +577,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'斎藤 飛鳥','さいとう あすか','1998-08-01','8100072','0924011835','asuka-saitou@@rikarento.com','女性','1234','2025-03-12','2025-03-12 15:10:00',NULL,NULL,NULL);
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -588,4 +590,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-03-12 14:36:57
+-- Dump completed on 2025-03-13 10:23:31
