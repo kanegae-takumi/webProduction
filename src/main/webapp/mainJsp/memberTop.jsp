@@ -6,8 +6,8 @@ pageEncoding="UTF-8"%>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>会員TOPページ</title>
-    <link rel="stylesheet" href="../css/html5reset-1.6.1.css" media="all" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/html5reset-1.6.1.css" media="all" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
   </head>
   <body>
      <!-- ヘッダーを挿入 -->
