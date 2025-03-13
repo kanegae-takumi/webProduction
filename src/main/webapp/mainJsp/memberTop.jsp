@@ -5,13 +5,13 @@ pageEncoding="UTF-8"%>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>非会員TOPページ</title>
-    <link rel="stylesheet" href="../css/html5reset-1.6.1.css" media="all" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <title>会員TOPページ</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/html5reset-1.6.1.css" media="all" />
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" />
   </head>
   <body>
      <!-- ヘッダーを挿入 -->
-  <jsp:include page="../inc/header.jsp" />
+  <jsp:include page="../inc/memberHeader.jsp" />
 
     <!-- メインコンテンツ -->
     <main>

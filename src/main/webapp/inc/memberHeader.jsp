@@ -9,13 +9,13 @@
 				</a></li>
 				<!-- ヘッダー右側 -->
 				<div class="nav">
-					<!-- ログイン -->
+					<!-- ログアウト -->
 					<li>
-						<button onclick="location.href='login.jsp'">ログイン</button>
+						<button onclick="location.href='logout.jsp'">ログアウト</button>
 					</li>
-					<!-- 新規登録 -->
+					<!-- マイページ -->
 					<li>
-						<button onclick="location.href='newMemberRegistration.jsp'">新規登録</button>
+						<button onclick="location.href='myPage.jsp'">マイページ</button>
 					</li>
 				</div>
 			</ul>

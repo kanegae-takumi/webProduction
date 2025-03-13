@@ -9,9 +9,11 @@
  <link rel="stylesheet" href="javascript:void(0)"> 
 </head>
  <body>
+ 	<form ticket="${pageContext.request.contextPath}/ResaleTicketList.java" method="post" onsubmit="saveData()">
  	<div class = enclose2>
  	<h5>チケットの購入が完了しました</h5><br/>
+ 	<button type="button2" name="resaleticket" value="memberTop">TOP</button>
  	</div>
- 	<button type="button2" onclick="location.href='./memberTop.jsp'">TOP</button>
+ 	</form>
  </body>
  </html>

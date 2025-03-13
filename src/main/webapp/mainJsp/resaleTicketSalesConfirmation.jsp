@@ -12,7 +12,7 @@
  	<h1>リセールチケット出品</h1>
  	<h5>表示されているチケットを出品しますか？</h5>
  	<div class = enclose1>
- 	<form ticket="${pageContext.request.contextPath}/TicketList" method="post" onsubmit="saveData()">
+ 	<form ticket="${pageContext.request.contextPath}/TicketList.java" method="post" onsubmit="saveData()">
  	<h1>
 		試合<br/>
 	</h1>	
@@ -22,8 +22,8 @@
 		座席<br/>
 	</h5>
 	</div>
-	<button type="submit" name="ticket" value="ticket">戻る</button>
-	<button type="submit" name="ticket" value="resaleTicketSalesComplete">出品する</button>
+	<button type="button2" name="ticket" value="ticket">戻る</button>
+	<button type="button1" name="ticket" value="resaleTicketSalesComplete">出品する</button>
 	</form>
  </body>
  </html>
